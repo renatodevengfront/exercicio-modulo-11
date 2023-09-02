@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(58, 58, 255);
+    padding: 16px 0;
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;    
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: rgb(58, 58, 255);
+}
+
+header .container, 
+section .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    margin-right: 24px;
+}
+
+#sobre-a-loja p {
+    text-align: justify;
+}
+
+.store-line {
+    margin-bottom: 50px;
+    border: 1px solid rgb(58, 58, 255);
+}
+
+.product-size {
+    max-width: 238px;
+}
+
+.game-list h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.game-list p {
+    font-size: 15px;
+}
+
+.game-list img {
+    padding-bottom: 30px;
+    margin-right: 24px;
+}
+
+.game-list li {
+    list-style: none;
+}
+
+.game-list li button {
+    display: block;
+    margin-top: 20px;
+    width: 91%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(58, 58, 255);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.game-list li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    .container, .container-flex {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .container h2 {
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    #sobre-a-loja img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .store-line {
+        margin-right: 35px;
+        margin-left: 30px;
+    }
+
+    .game-list li button {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 85%;
+    }
+
+    .game-list img {
+        padding-bottom: 10px;
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+    .game-list h3 {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .game-list p {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .container-flex h1 {
+        padding: 10px;
+    }
+
+    .paragrafo-flex p {
+        margin-right: 35px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container, .container-flex {
+        max-width: 90%;
+        display: block;
+    }
+
+    .container h2 {
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .container-store {
+        display: flex;
+    }
+
+    .container-shop img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .game-list, h2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
+    }
+
+    .game-list h3 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .game-list img {
+        width: 125%;
+        padding-bottom: 10px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .game-list p {
+        padding-bottom: 10px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .game-list li button {
+        font-size: 20px;
+        margin-right: 50px;
+        margin-left: 0;
+        width: 125%;
+        padding-top: 15px;
+    }
+}
